@@ -38,7 +38,6 @@ function addUser() {
             displayData();
         },
         error: function (xhr, status, error) {
-            alert("aa")
             console.log("deu ruimmmm")
         }
     })
@@ -96,7 +95,6 @@ function updateDetails () {
 }
 
 function deleteUser(deleteid){
-    alert("aaaa")
     $.ajax({
         url: "./deleteUser",
         type: "POST",

@@ -10,7 +10,6 @@ class Home_model extends CI_Model{
     }
     
     public function insertResult($array = null) {
-        /* var_dump($array); die('model'); */
         $this->db->insert('users', $array);
 
         if($this->db->affected_rows() > 0){
@@ -18,8 +17,6 @@ class Home_model extends CI_Model{
         } else {
             return false;
         }
-        
-       // return $query->result();
     }
 
     public function getUsers() {
@@ -28,7 +25,6 @@ class Home_model extends CI_Model{
     }
 
     public function updateUser($id) {
-        //var_dump($id); die('modellll');
         $this->db->where('id', $id);
         $query = $this->db->get("users");
 
@@ -41,8 +37,6 @@ class Home_model extends CI_Model{
     }
 
     public function updateDetails($id, $data){
-        /* var_dump($id, $data);
-        die('aaaa'); */
         $this->db->where("id", $id);
         $this->db->update("users", $data);
 
