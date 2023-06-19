@@ -1,0 +1,23 @@
+.header {
+    background-color: black; 
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: center;
+    height: 90px;
+}
+
+.ul {
+    list-style: none;
+
+}
+
+.ul .li {
+display: inline;
+margin-right: 10px;
+
+}
+
+.ul .li > a {
+    color: #fff;
+    font-size: 25px;
+}
